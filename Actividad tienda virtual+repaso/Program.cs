@@ -19,10 +19,10 @@ namespace Actividad_tienda_virtual_repaso
                 Console.WriteLine("Ingrese el número de la opción y luego enter:");
                 Console.WriteLine("1 - Agregar un nuevo cliente");
                 Console.WriteLine("2 - Agregar un nuevo producto");
-                Console.WriteLine("3 - Agregar una nueva venta");
-                Console.WriteLine("4 - Buscar clientes");
-                Console.WriteLine("5 - Buscar productos");
-                Console.WriteLine("6 - Buscar ventas");
+                Console.WriteLine("3 - Cargar nueva venta");
+                Console.WriteLine("4 - ");
+                Console.WriteLine("5 - Mostrar lista de productos");
+                Console.WriteLine("6 - ");
                 Console.WriteLine("0 - Salir");
 
                 opcion = MetodosGenericos.ValidarInt(0, 6);
