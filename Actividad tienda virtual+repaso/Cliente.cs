@@ -6,31 +6,50 @@ using System.Threading.Tasks;
 
 namespace Actividad_tienda_virtual_repaso
 {
-    internal class Cliente
+    public class Cliente
     {
         private static List<Cliente> clientes = new List<Cliente>();
         private string nombre;
         private string mail;
-        private string dirEnvio;
 
         public Cliente()
         {
             this.nombre = "";
-            this.dirEnvio = "";
-            this.email = "";
+            this.mail = "";
         }
-        public Cliente(string nombre, string mail, string dirEnvio)
+        public Cliente(string nombre, string mail)
         {
             this.nombre = nombre;
             this.mail = mail;
-            this.dirEnvio = dirEnvio;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
-        public string DirEnvio { get => dirEnvio; set => dirEnvio = value; }
-        public string Email { get => email; set => email = value; }
+        public string Mail { get => mail; set => mail = value; }
         public static List<Cliente> Clientes { get => clientes; set => clientes = value; }
 
+
+        public static Cliente AgregarCliente()
+        {
+            Cliente c = new Cliente();
+
+            Console.WriteLine("\n************* Nuevo cliente *************");
+            Console.WriteLine("Ingrese los siguientes datos");
+
+            Console.Write("Nombre: ");
+            c.Nombre = Console.ReadLine();
+
+            Console.Write("E-mail: ");
+
+            c.Guardar();
+
+            Console.WriteLine("\n************* Cliente agregado correctamente *************");
+            return c;
+        }
+
+        public void Guardar()
+        {
+            Cliente.clientes.Add(this);
+        }
 
     }
 }

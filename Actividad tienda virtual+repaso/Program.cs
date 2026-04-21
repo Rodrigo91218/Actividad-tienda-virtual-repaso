@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Actividad_tienda_virtual_repaso
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -30,7 +30,7 @@ namespace Actividad_tienda_virtual_repaso
                 switch (opcion)
                 {
                     case 1:
-                        
+                        Cliente.AgregarCliente();
                         break;
                     case 2:
                         

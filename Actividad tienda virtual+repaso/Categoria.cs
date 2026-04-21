@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Actividad_tienda_virtual_repaso
 {
-    internal class Categoria
+    public class Categoria
     {
         private string nombre;
         private string descripcion;
@@ -17,7 +17,7 @@ namespace Actividad_tienda_virtual_repaso
             this.descripcion = "";
         }
 
-        public Producto(string nombre, string descripcion)
+        public Categoria(string nombre, string descripcion)
         {
             this.nombre = nombre;
             this.descripcion = descripcion;
